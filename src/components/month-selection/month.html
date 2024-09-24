@@ -4,78 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="WellnessChecklist.css">
+    <link rel="stylesheet" href="month.css">
 
 </head>
 
-<body>
-    <h1>Expense Tracker</h1>
-<ol>
-    <input type="checkbox" name="gym" id="wellness">
-        <label for="agree">Walk</label>
-    <input type="checkbox" name="gym" id="wellness">
-        <label for="agree">Meditate</label>
-    <input type="checkbox" name="gym" id="wellness">
-        <label for="agree">Eat</label>
-    <input type="checkbox" name="gym" id="wellness">
-        <label for="agree">Shower</label>
-    <input type="checkbox" name="gym" id="wellness">
-        <label for="agree">Checked Emails</label>
-    <input type="checkbox" name="gym" id="wellness">
-        <label for="agree">Leetcode</label>
-</ol>
 
+
+<body>
+
+    <header>
+        <h1 id="title">Expense Tracker</h1>
+    </header>
 
 <p>
     <div>
-        <label for="January">January</label>
-        <input type="radio" name="month" id="January" value="January">
+        <form name="entry" id="entry">
+        <label for="month">Choose a month</label>
+        <select name="month" id="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        
+        <label for="category">Choose a category</label>
+        <select name="category" id="category">
+            <option value="Groceries">Groceries</option>
+            <option value="Gas">Gas</option>
+            <option value="Rent">Rent</option>
+            <option value="Subscription">Subscription</option>
+            <option value="Social">Social</option>
+            <option value="Car">Car</option>
+            <option value="Savings">Savings</option>
+            <option value="Emergency">Emergency</option>
+            <option value="Debt">Debt</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Fun">Fun</option>
+            <option value="Misc">Misc</option>
+        </select>
+
+        
+        <label>
+            Enter an Amount:
+            <input type="number" placeholder="Enter a number" name="num" min="1" max="1000">
+        </label>
+
+        <input type="submit" value="Enter">
+        </form>
     </div>
-    <div>
-        <label for="February">February</label>
-        <input type="radio" name="month" id="February" value="February">
-    </div>
-    <div>
-        <label for="March">March</label>
-        <input type="radio" name="month" id="March" value="March">
-    </div>    
-    <div>
-        <label for="April">April</label>
-        <input type="radio" name="month" id="April" value="April">
-    </div>
-    <div>
-        <label for="May">May</label>
-        <input type="radio" name="month" id="May" value="May">
-    </div>
-    <div>
-        <label for="June">June</label>
-        <input type="radio" name="month" id="June" value="June">
-    </div>
-    <div>
-        <label for="July">July</label>
-        <input type="radio" name="month" id="July" value="July">
-    </div>
-    <div>
-        <label for="August">August</label>
-        <input type="radio" name="month" id="August" value="August">
-    </div>
-    <div>
-        <label for="September">September</label>
-        <input type="radio" name="month" id="September" value="September">
-    </div>
-    <div>
-        <label for="October">October</label>
-        <input type="radio" name="month" id="October" value="October">
-    </div>
-    <div>
-        <label for="November">November</label>
-        <input type="radio" name="month" id="November" value="November">
-    </div>
-    <div>
-        <label for="December">December</label>
-        <input type="radio" name="month" id="December" value="December">
-    </div>
+
     
+
 </p>
     </body>
 

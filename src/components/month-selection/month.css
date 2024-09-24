@@ -1,12 +1,16 @@
 * {
     font-family: monospace;
-    background: skyblue;
+    background: white;
 }
 
 body {
-    color: skyblue;
+    color: black;
 }
 
-h1 {
+.entry {
+    text-align: center;   
+}
+
+.title {
     text-align: center;
 }
